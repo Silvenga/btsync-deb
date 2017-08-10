@@ -1,3 +1,12 @@
+2.5.7 (08-09-17)
+
+- Revise sorting behaviour
+- Fixed incorrect UI elements layout
+- Fixed system notifications not working on root folder
+- Fixed speed limits not saved after restart if set via API
+- Crashes on Windows
+- Other core improvements and fixes
+
 2.5.6 (07-13-17)
 
 - Added link to Customer Portal for license management
@@ -565,7 +574,7 @@ Fixes
 
 2.0.104 (April 7, 2015)
 
- - Resolved an issue preventing Sync from automatically starting after
+ - Resolved an issue preventing Sync from automatically starting aafter
    installing an update
  - Can now share a folder using a link and give the receiver owner permissions
  - Cosmetic enhancements
