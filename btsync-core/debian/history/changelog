@@ -1,3 +1,11 @@
+2.5.8 (09-08-17)
+
+- Fixed Sync reporting inability to download file from remote peer due to being offline
+- Fixed "password_hash" parameter not working on Windows
+- Fixed Sync causing high CPU usage on Mac sometimes
+- Enabled WAN optimization for Sync Business trial
+- Minor cosmetic fixes
+
 2.5.7 (08-09-17)
 
 - Revise sorting behaviour
