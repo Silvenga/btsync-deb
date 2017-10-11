@@ -1,6 +1,6 @@
 #load "cake/functions.cake"
 #load "cake/objects.cake"
-#addin "Cake.FileHelpers"
+#addin "nuget:?package=Cake.FileHelpers&version=1.0.4"
 
 // https://download-cdn.getsync.com/stable/linux-x64/resilio-sync_x64.tar.gz
 
