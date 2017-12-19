@@ -1,3 +1,7 @@
+2.5.10 (12-18-17)
+
+- Fixed crash when syncing encrypted folders
+
 2.5.9 (10-10-17)
 
 - Minor cosmetic fixes (few broken links fixed)
