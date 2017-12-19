@@ -1,4 +1,5 @@
 #addin nuget:?package=HtmlAgilityPack
+#addin "nuget:?package=semver&version=1.1.2"
 #reference "tools/Addins/HtmlAgilityPack/lib/Net45/HtmlAgilityPack.dll"
 using HtmlAgilityPack;
 using System.Text.RegularExpressions;
@@ -56,11 +57,14 @@ IEnumerable<Release> GetVersions(string url)
 	for (var i = 0; i < Math.Min(versions.Count, 5); i++)
 	{
 		var version = versions[i];
+		if(string.IsNullOrWhiteSpace(version)){
+			continue;
+		}
 		var body = logs[i];
 		yield return new Release
 		{
 			Changes = body,
-			Version = version
+			Version = SemVersion.Parse(version)
 		};
 	}
 }

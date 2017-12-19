@@ -1,3 +1,5 @@
+using Semver;
+
 public class PackageProfile
 {
     public string Name { get; set; }
@@ -6,6 +8,6 @@ public class PackageProfile
 
 public class Release
 {
-    public string Version { get; set; }
+    public SemVersion Version { get; set; }
     public string Changes { get; set; }
 }

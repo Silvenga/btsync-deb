@@ -48,7 +48,7 @@ Task("Update-Changelog")
     Information(string.Format("Last detected version {0}.", lastVersion.Version));
 
     var currentHistory = FileReadText(historyPath);
-    if(!currentHistory.Split('\n').Any(x => x.StartsWith(lastVersion.Version)))
+    if(!currentHistory.Split('\n').Any(x => x.StartsWith(lastVersion.Version.ToString())))
     {
       Information("Updating history file.");
     	currentHistory = CreateHistoryChangelog(lastVersion) + currentHistory;
