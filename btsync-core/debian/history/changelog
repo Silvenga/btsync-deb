@@ -1,6 +1,13 @@
+2.5.11 (01-09-18)
+
+- Improved interoperability with 3rd party apps
+- Other minor fixes and improvements
+
 2.5.10 (12-18-17)
 
-- Fixed crash when syncing encrypted folders
+- Fixed crash when syncing encrypted folders
+- Improved saving configuration on exiting
+- Minor improvements and fixes
 
 2.5.9 (10-10-17)
 
