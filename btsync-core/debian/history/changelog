@@ -1,3 +1,7 @@
+2.5.13 (05-24-18)
+
+- Security-related fix with dll loading schema (affects Windows only)
+
 2.5.12 (01-11-18)
 
 - Fixed inability to auto-update Sync
