@@ -1,3 +1,32 @@
+2.6.0 (07-26-18)
+
+- Introduced performance charts
+- New Sync statuses and warnings
+- Advanced power user settings
+- Implement decryption tool for Encrypted folders
+- Added $RECYCLE.BIN and SystemVolume Information to default Ignorelist.
+- Made file sharing a free feature
+- Ability upgrade Home Pro to Family Pro from Sync UI
+- Added API feature to Sync Business Trial
+
+- Fixed icon color on OS X Dark Mode
+- Fixed folders turning to synchronization mode in some cases
+- Preserve speed settings when restarting Sync
+- Fixed adding advanced settings via API
+- Fixed randomization of MAC address in Sync UI
+- Fixed syncing trailing dot to a Windows peer 
+- Fixed some crashes of file explorer on Windows
+- Fixed crash because of corrupt database
+- Fixed some other crashes and freezes
+- Fixed inability to reset power user settings
+- Fixed creating conflict name on file name with %
+- Preserve custom config file when updating linux packages
+- FileDelayConfig now works on posix
+- Security vulnerability fix
+
+- UI rearrangements and improvements
+- Other minor fixes and improvements
+
 2.5.13 (05-24-18)
 
 - Security-related fix with dll loading schema (affects Windows only)
