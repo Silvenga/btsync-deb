@@ -9,6 +9,8 @@ var target = Argument<string>("target", "Default");
 // --packages btsync-common,btsync-core,btsync-gui,btsync-user,btsync
 var packageArgs = Argument<string>("packages", "btsync-core,btsync").Split(',');
 
+System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
+
 var availablePackageProfiles = new List<PackageProfile>()
     {
       new PackageProfile {
@@ -37,7 +39,7 @@ var packageProfiles = availablePackageProfiles
                       .Where(x => packageArgs.Contains(x.Name))
                       .ToList();
 
-const string syncChangeLog = "http://help.getsync.com/hc/en-us/articles/206216855-Sync-2-x-change-log";
+const string syncChangeLog = "https://help.resilio.com/hc/en-us/articles/206216855";
 const string historyPath = "btsync-core/debian/history/changelog";
 const string changelogFile = "btsync-core/debian/changelog";
 
