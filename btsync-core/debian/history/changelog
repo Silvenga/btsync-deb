@@ -1,3 +1,13 @@
+2.6.1 (09-26-18)
+
+- Security fix with btsync:// protocol 
+- Fixed crashes when reading damaged database
+- Removed false positive "Cannot get list of trackers" error message
+- Fixed joining multicasts on 172.16.0.0/12 networks
+- Fixed showing duplicated peers and devices on OS X 
+- Fixed failure to save settings in WebUI sometimes
+- Fixed decrypting files on encrypted peer
+
 2.6.0 (07-26-18)
 
 - Introduced performance charts
