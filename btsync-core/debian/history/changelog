@@ -1,3 +1,17 @@
+2.6.2 (11-22-18)
+
+- OpenSUSE repository now works correctly
+- Fixed false positive "no free space" error on old arm cpus
+- Added option to skip disk free space check in power user settings
+- Fixed permissions check before downloading single files
+- Added 'proxy_resolve' option to sync.conf
+- Added validation of arguments passed to '--decrypt' option
+- Fixed disk space detection on btrfs & file systems mounted via FUSE on Linux
+- Fixed issue when a partially downloaded file was deleted and .!sync remained in .sync directory
+- Fixed crashes
+- Fixed invalid symbols in path on Windows that caused syncing stuck
+- Improvements and optimization in core
+
 2.6.1 (09-26-18)
 
 - Security fix with btsync:// protocol 
