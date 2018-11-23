@@ -2,13 +2,13 @@
 
 # BitTorrent Sync Packaging Project
 
-[![Build Status](https://img.shields.io/travis/Silvenga/btsync-deb.svg?style=flat-square)](https://travis-ci.org/Silvenga/btsync-deb)
+[![AppVeyor](https://img.shields.io/appveyor/ci/Silvenga/btsync-deb.svg?logo=appveyor&maxAge=3600&style=flat-square)](https://ci.appveyor.com/project/Silvenga/btsync-deb)
 
-> The bellow `apt-key` was incorrectly importing my signing key, rather than my public key. If any errors on updating, run the updated command. 
+> The bellow `apt-key` was incorrectly importing my signing key, rather than my public key. If any errors on updating, run the updated command.
 
 I will be providing continued maintenance for this awesome project that Mr. Tuxpoldo has founded. Until I am accustomed to this project (or Python for the matter) I can provide support for the `btsync` and `btsync-common` packages with new binary versions and bugfixes.
 
-Debian and Ubuntu packages can be found under my private repository http://deb.silvenga.com. New versions should be automatically built and published to this location via my build server (found above) when new changelogs are released. 
+Debian and Ubuntu packages can be found under my private repository http://deb.silvenga.com. New versions should be automatically built and published to this location via my build server (found above) when new changelogs are released.
 
 Cheers!
 
@@ -47,9 +47,9 @@ Adding a new synced folder results in the following error:
 
 ### Solution
 
-Make sure the user Btsync is running as has read and write access to the path set when prompted for the "Start path for the web interface". 
+Make sure the user Btsync is running as has read and write access to the path set when prompted for the "Start path for the web interface".
 
-Alternatively, `/` can be used. 
+Alternatively, `/` can be used.
 
 ### Issue
 
@@ -90,12 +90,12 @@ gpg: error reading `[stream]': general error
 
 ### Solution
 
-Make sure to run all the above commands as `root` either by using `sudo` or switching to the `root` user. 
+Make sure to run all the above commands as `root` either by using `sudo` or switching to the `root` user.
 
 ## TODO
 
 * Log to proper log folder.
-* Setup logrotate. 
+* Setup logrotate.
 
 ## Original README
 
