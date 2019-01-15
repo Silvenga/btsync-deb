@@ -1,3 +1,10 @@
+2.6.3 (01-14-19)
+
+- Fixed moving files to Archive and replacing them with 0 bytes files
+- Fixed downloading big files to disk on x86 and arm architectures
+- Optimized work with Keynote files on OS X 
+- Fixed some crashes at starting and existing Sync
+
 2.6.2 (11-22-18)
 
 - OpenSUSE repository now works correctly
