@@ -44,15 +44,18 @@ Task("Clean")
 {
     foreach(var package in packageProfiles)
     {
-        Information(string.Format("Cleaning workspace of {0}.", package.Name));
+        Information($"Cleaning workspace of {package.Name}.");
 
         var path = PackageToPath(package.Name);
-        Run("debuild", "-- clean", path);
-        DeleteFiles(string.Format("./{0}*.build", package.Name));
-        DeleteFiles(string.Format("./{0}*.changes", package.Name));
-        DeleteFiles(string.Format("./{0}*.deb", package.Name));
-        DeleteFiles(string.Format("./{0}*.dsc", package.Name));
-        DeleteFiles(string.Format("./{0}*.tar.gz", package.Name));
+        Run("debuild", "--no-tgz-check -- clean", path);
+        DeleteFiles($"./{package.Name}*.build");
+        DeleteFiles($"./{package.Name}*.changes");
+        DeleteFiles($"./{package.Name}*.deb");
+        DeleteFiles($"./{package.Name}*.dsc");
+        DeleteFiles($"./{package.Name}*.tar.gz");
+
+        DeleteFiles($"./*.buildinfo");
+        DeleteFiles($"./*.debian.tar.xz");
     }
 });
 
@@ -62,8 +65,10 @@ Task("Build-Src")
 {
     foreach(var package in packageProfiles)
     {
-        Information(string.Format("Building source of {0}.", package.Name));
-        BuildDebianSrc(package.Name);
+        Information($"Building source of {package.Name}.");
+        var path = PackageToPath(package.Name);
+        Run(path + "/debian/rules", "get-orig-source", path);
+        Run("debuild", "-S -sa -uc -us", path);
     }
 });
 
@@ -73,8 +78,21 @@ Task("Build-Deb")
 {
     foreach(var package in packageProfiles)
     {
-        Information(string.Format("Building Debian package for {0}.", package.Name));
-        BuildDebianPackage(package.Name, package.Arches);
+        Information($"Building Debian package for {package.Name}.");
+
+        Information("Extracting source.");
+
+        Run("bash", $"-c \"tar xvf {package.Name}_*.orig.tar.gz -C ./\"", "./");
+
+        var path = PackageToPath(package.Name);
+        foreach(var arch in package.Arches)
+        {
+                Information($"Building for arch {arch}.");
+                var options = arch == "all"
+                              ? "-uc -us -b"
+                              : "-uc -us -b -a" + arch;
+            Run("debuild", options, path);
+        }
     }
 });
 
