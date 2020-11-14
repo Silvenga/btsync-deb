@@ -1,0 +1,11 @@
+FROM ubuntu:focal
+
+RUN set -xe \
+    && apt-get update \
+    && apt-get install -y gnupg2 software-properties-common
+
+RUN set -xe \
+    && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 37F1A037FEF78709 \
+    && add-apt-repository "deb http://deb.silvenga.com/btsync any main" \
+    && apt-cache policy btsync-core \
+    && apt-cache policy btsync
