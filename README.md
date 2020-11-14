@@ -2,7 +2,7 @@
 
 # BitTorrent Sync Packaging Project
 
-[![AppVeyor](https://img.shields.io/appveyor/ci/Silvenga/btsync-deb.svg?logo=appveyor&maxAge=3600&style=flat-square)](https://ci.appveyor.com/project/Silvenga/btsync-deb)
+[![Build](https://github.com/Silvenga/btsync-deb/workflows/Build/badge.svg)](https://github.com/Silvenga/btsync-deb/actions)
 
 > The bellow `apt-key` was incorrectly importing my signing key, rather than my public key. If any errors on updating, run the updated command.
 
