@@ -1,6 +1,6 @@
 #load "cake/functions.cake"
 #load "cake/objects.cake"
-#addin "nuget:?package=Cake.FileHelpers&version=1.0.4"
+#addin "nuget:?package=Cake.FileHelpers&version=3.3.0"
 
 // https://download-cdn.getsync.com/stable/linux-x64/resilio-sync_x64.tar.gz
 
@@ -38,41 +38,6 @@ var availablePackageProfiles = new List<PackageProfile>()
 var packageProfiles = availablePackageProfiles
                       .Where(x => packageArgs.Contains(x.Name))
                       .ToList();
-
-const string syncChangeLog = "https://help.resilio.com/hc/en-us/articles/206216855";
-const string historyPath = "btsync-core/debian/history/changelog";
-const string changelogFile = "btsync-core/debian/changelog";
-
-Task("Update-Changelog")
-    .Does(() =>
-{
-    var lastVersion = GetLastVersion(syncChangeLog);
-    Information(string.Format("Last detected version {0}.", lastVersion.Version));
-
-    var currentHistory = FileReadText(historyPath);
-    if(!currentHistory.Split('\n').Any(x => x.StartsWith(lastVersion.Version.ToString())))
-    {
-      Information("Updating history file.");
-    	currentHistory = CreateHistoryChangelog(lastVersion) + currentHistory;
-    	FileWriteText(historyPath, currentHistory);
-    }
-    else
-    {
-    	Information("History file is already up-to-date.");
-    }
-
-    var currentChangelog = FileReadText(changelogFile);
-    if(!currentChangelog.Contains("(" + lastVersion.Version))
-    {
-    	Information("Updating changelog file.");
-    	currentChangelog = CreateChangelog(lastVersion) + currentChangelog;
-    	FileWriteText(changelogFile, currentChangelog);
-    }
-    else
-    {
-    	Information("Changelog file is already up-to-date.");
-    }
-});
 
 Task("Clean")
     .Does(() =>
