@@ -45,7 +45,14 @@ Task("Clean")
     foreach(var package in packageProfiles)
     {
         Information(string.Format("Cleaning workspace of {0}.", package.Name));
-        CleanDebianWorkspace(package.Name, package.Arches);
+
+        var path = PackageToPath(package.Name);
+        Run("debuild", "-- clean", path);
+        DeleteFiles(string.Format("./{0}*.build", package.Name));
+        DeleteFiles(string.Format("./{0}*.changes", package.Name));
+        DeleteFiles(string.Format("./{0}*.deb", package.Name));
+        DeleteFiles(string.Format("./{0}*.dsc", package.Name));
+        DeleteFiles(string.Format("./{0}*.tar.gz", package.Name));
     }
 });
 
@@ -72,6 +79,6 @@ Task("Build-Deb")
 });
 
 Task("Default")
-    .IsDependentOn("Update-Changelog");
+    .IsDependentOn("Build-Deb");
 
 RunTarget(target);

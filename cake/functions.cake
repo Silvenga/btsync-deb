@@ -17,17 +17,6 @@ string PackageToPath(string package)
     return string.Format("./{0}", package);
 }
 
-void CleanDebianWorkspace(string package, params string[] arches)
-{
-    var path = PackageToPath(package);
-    Run("debuild", "clean", path);
-    DeleteFiles(string.Format("./{0}*.build", package));
-    DeleteFiles(string.Format("./{0}*.changes", package));
-    DeleteFiles(string.Format("./{0}*.deb", package));
-    DeleteFiles(string.Format("./{0}*.dsc", package));
-    DeleteFiles(string.Format("./{0}*.tar.gz", package));
-}
-
 void BuildDebianPackage(string package, params string[] arches)
 {
     Information("Extracting source.");
