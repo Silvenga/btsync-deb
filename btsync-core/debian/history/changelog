@@ -1,8 +1,52 @@
+2.7.2.1375:
+
+- Fixed access to Pictures on OS X 10.15
+- Fixed installation of Sync as a Windows service
+- Fixed redownloading big files in some cases
+- Other minor fixes and improvements
+- Deprecated: support for WindowsServers for Sync Home Free and Pro
+
+2.7.1.1370:
+
+- Listening port on Synology is forced to be 28889
+- Use OpenSSL library for secure connections
+- Change date format in Sync tooltip
+- Fixed crash if there is a peer with old Sync version in the mesh
+- Fixed license on loading on start in some cases
+- Fixed randomizing of listening port on Linux
+- Deprecated: support for WindowsServers for Sync Home Free and Pro
+
+2.7.0.1366:
+
+- New: syncing folders on same computer
+- New:  setting custom names for sync shares
+- Option to force rescan a sync share
+- Added search in power user settings
+- Added error report when Sync consumed too much RAM
+- Fixed FileDelayConfig on POSIX
+- Fixed WebUI not working if two or more config files are used
+- Fixed crash when trying to decrypt encrypted folder
+- Fixed using IPv6 addresses as known hosts
+- Fixed false positive "No free space" error in some cases
+- Fixed syncing files bigger than 4 Gb on FreeBSD
+- Fixed UPnP not working in some cases
+- Fixed failed hash check on encrypted folders
+- Fixed xattrs not syncing on OS X in some cases
+- Improved minimized startup on Windows
+- Removed option to copy key from drop down menu
+- Disabled shell extension logging by default
+- Deprecated: support for WindowsServers for Sync Home Free and Pro
+- Multiple core fixes and improvements
+
+2.6.4:
+
+- Fixed security issue in the Sync WebUI. Credits to Frantisek Uhrecky (fruh)
+
 2.6.3 (01-14-19)
 
 - Fixed moving files to Archive and replacing them with 0 bytes files
 - Fixed downloading big files to disk on x86 and arm architectures
-- Optimized work with Keynote files on OS X 
+- Optimized work with Keynote files on OS X
 - Fixed some crashes at starting and existing Sync
 
 2.6.2 (11-22-18)
@@ -21,11 +65,11 @@
 
 2.6.1 (09-26-18)
 
-- Security fix with btsync:// protocol 
+- Security fix with btsync:// protocol
 - Fixed crashes when reading damaged database
 - Removed false positive "Cannot get list of trackers" error message
 - Fixed joining multicasts on 172.16.0.0/12 networks
-- Fixed showing duplicated peers and devices on OS X 
+- Fixed showing duplicated peers and devices on OS X
 - Fixed failure to save settings in WebUI sometimes
 - Fixed decrypting files on encrypted peer
 
@@ -45,7 +89,7 @@
 - Preserve speed settings when restarting Sync
 - Fixed adding advanced settings via API
 - Fixed randomization of MAC address in Sync UI
-- Fixed syncing trailing dot to a Windows peer 
+- Fixed syncing trailing dot to a Windows peer
 - Fixed some crashes of file explorer on Windows
 - Fixed crash because of corrupt database
 - Fixed some other crashes and freezes
@@ -215,7 +259,7 @@ Fixes
 
 Changes and improvements:
 
-- Sync now keeps placeholders mtime up-to-date as on real files 
+- Sync now keeps placeholders mtime up-to-date as on real files
 
 Fixes
 
@@ -365,7 +409,7 @@ Changes and improvements:
 - Sync for Linux now creates (and loads) storage folder in the current directory
 
 UI changes:
-- Complete redesign of the Add Folder flow 
+- Complete redesign of the Add Folder flow
 - It will be possible to change folder path only in case of ‘Folder not found’ or ‘Service files missing’ error
 - New design for very advanced (Power User) preferences
 - General hygiene usability improvements
@@ -379,10 +423,10 @@ Fixes:
 - Sometimes certificate was lost after unexpected system restart
 - Fixed issue with failing to sync files with read-only attributes set by other apps
 - Files were re-downloaded after being restored from archive
-- Sync wouldn’t start if there were no shared folders or webui in config 
-- Sync got stuck sometimes after renaming a subfolder 
+- Sync wouldn’t start if there were no shared folders or webui in config
+- Sync got stuck sometimes after renaming a subfolder
 - Synced files sometimes were duplicated with .bts files
-- Issue with getting blank UI when Sync is actually working 
+- Issue with getting blank UI when Sync is actually working
 - Selective sync switch disappeared on Windows if Sync ran with /webui option or with Internet Explorer 8 or older
 - /api/v2/folders call didn’t show RW secret
 - Database error randomly appeared after system restart
@@ -418,7 +462,7 @@ Fixes:
 
 2.2.3
 
-Improvements    
+Improvements
 - Default folder behavior is now "Disconnected" for all OSes except Linux
 - Added a way to apply license from the "License" menu
 - Show extended info about remote peer in "My Devices" regardless of default sync mode
@@ -426,7 +470,7 @@ Improvements
 - Fix Sync icon for MacOS
 - Minor cosmetic changes
 
-Fixes    
+Fixes
 - Teams license cannot replace personal one
 - Nothing happens when user clicks "Get started" button in welcome screen
 
@@ -454,7 +498,7 @@ Fixes
 - Personal license does not distribute automatically on free linked devices
 - Optimize debug logs to save HDD space
 - BTS files remain in the folder sometimes
-- Sync shows stub list instead of locked files 
+- Sync shows stub list instead of locked files
 
 2.2.0
 
