@@ -1,0 +1,27 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: mcr.microsoft.com/dotnet/sdk:5.0-focal
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        apt-get update
+        apt-get install -y git
+        DEBIAN_FRONTEND="noninteractive" apt-get -y install build-essential devscripts debhelper intltool fakeroot
+
+        dotnet tool install --global Cake.Tool --version 0.38.5
+        export PATH="$PATH:/github/home/.dotnet/tools"
+
+        dotnet-cake
+      name: build
+    - uses: actions/upload-artifact@v2
+      with:
+        path: |
+          ./**/*.deb
