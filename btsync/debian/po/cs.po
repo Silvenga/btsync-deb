@@ -322,18 +322,6 @@ msgstr "Při povolení, nové složky budou nastaveny aby používaly automatick
 
 #. Type: boolean
 #. Description
-#: ../btsync.templates:26001
-msgid "Should BitTorrent Sync use LAN broadcasts by default?"
-msgstr "Měl by Bittorrent Sync používat automaticky spojení po LAN?"
-
-#. Type: boolean
-#. Description
-#: ../btsync.templates:26001
-msgid "If enabled, new shared folders will be configured to use LAN Broadcast for local peer discovery by default."
-msgstr "Při povolení, nové sdílené složky budou automaticky používat LAN Broadcast pro zmapování lokálních klientů."
-
-#. Type: boolean
-#. Description
 #: ../btsync.templates:27001
 msgid "Should BitTorrent Sync use external relay servers wheen needed?"
 msgstr "Měl by BitTorrent Sync používat externí relay servery, pokud k to mu bude zapotřebí?"

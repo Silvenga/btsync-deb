@@ -321,18 +321,6 @@ msgstr "Ha be van állítva, az újonnan létrehozott megosztott mappákra enged
 
 #. Type: boolean
 #. Description
-#: ../btsync.templates:26001
-msgid "Should BitTorrent Sync use LAN broadcasts by default?"
-msgstr "LAN broadcast engedélyezve alapértelmezetten?"
-
-#. Type: boolean
-#. Description
-#: ../btsync.templates:26001
-msgid "If enabled, new shared folders will be configured to use LAN Broadcast for local peer discovery by default."
-msgstr "Ha be van állítva, az újonnan létrehozott megosztott mappákra engedélyezve lesz a LAN broadcast a helyi partnerek kereséséhez."
-
-#. Type: boolean
-#. Description
 #: ../btsync.templates:27001
 msgid "Should BitTorrent Sync use external relay servers wheen needed?"
 msgstr "Külső átjátszó szerverek használata szükség esetén?"

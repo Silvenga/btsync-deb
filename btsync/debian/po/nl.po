@@ -322,18 +322,6 @@ msgstr "Indien ingeschakeld, zullen nieuwe gedeelde mappen worden geconfigureerd
 
 #. Type: boolean
 #. Description
-#: ../btsync.templates:26001
-msgid "Should BitTorrent Sync use LAN broadcasts by default?"
-msgstr "Moet BitTorrent Sync standaard LAN broadcasts gebruiken?"
-
-#. Type: boolean
-#. Description
-#: ../btsync.templates:26001
-msgid "If enabled, new shared folders will be configured to use LAN Broadcast for local peer discovery by default."
-msgstr "Indien ingeschakeld, zullen nieuwe gedeelde mappen standaard worden geconfigureerd om LAN Broadcast te gebruiken voor lokale peer-ontdekking."
-
-#. Type: boolean
-#. Description
 #: ../btsync.templates:27001
 msgid "Should BitTorrent Sync use external relay servers wheen needed?"
 msgstr "Moet BitTorrent Sync externe relay servers gebruiken indien nodig?"

@@ -321,18 +321,6 @@ msgstr "Falls aktiviert, werden neue geteilte Ordner mit aktivierter DHT (Distri
 
 #. Type: boolean
 #. Description
-#: ../btsync.templates:26001
-msgid "Should BitTorrent Sync use LAN broadcasts by default?"
-msgstr "Soll BitTorrent Sync LAN Broadcasts standardmäßig verwenden?"
-
-#. Type: boolean
-#. Description
-#: ../btsync.templates:26001
-msgid "If enabled, new shared folders will be configured to use LAN Broadcast for local peer discovery by default."
-msgstr "Falls aktiviert, werden neue geteilte Ordner mit aktiviertem LAN Broadcast für die Entdeckung neuer Geräte konfiguriert."
-
-#. Type: boolean
-#. Description
 #: ../btsync.templates:27001
 msgid "Should BitTorrent Sync use external relay servers wheen needed?"
 msgstr "Soll BitTorrent Sync externe Relay-Server bei Bedarf verwenden?"

@@ -321,18 +321,6 @@ msgstr "Если выбрано, то новые папки будут наст�
 
 #. Type: boolean
 #. Description
-#: ../btsync.templates:26001
-msgid "Should BitTorrent Sync use LAN broadcasts by default?"
-msgstr "Использовать широковещательную рассылку в локальной сети по умолчанию?"
-
-#. Type: boolean
-#. Description
-#: ../btsync.templates:26001
-msgid "If enabled, new shared folders will be configured to use LAN Broadcast for local peer discovery by default."
-msgstr "Если выбрано, то новые папки будут настраиваться на использование широковещательной рассылки внутри сети для локального поиска пиров."
-
-#. Type: boolean
-#. Description
 #: ../btsync.templates:27001
 msgid "Should BitTorrent Sync use external relay servers wheen needed?"
 msgstr "Использовать внешние релей серверы когда необходимо?"

@@ -321,19 +321,6 @@ msgstr "Se está activado, os novos cartafoles compartidos serán configurados p
 
 #. Type: boolean
 #. Description
-#: ../btsync.templates:26001
-msgid "Should BitTorrent Sync use LAN broadcasts by default?"
-msgstr "BitTorrent Sync ten que empregar a difusión LAN de xeito predeterminado?\n"
-""
-
-#. Type: boolean
-#. Description
-#: ../btsync.templates:26001
-msgid "If enabled, new shared folders will be configured to use LAN Broadcast for local peer discovery by default."
-msgstr "Se está activado, os novos cartafoles compartidos serán configurados para que empreguen a difusión LAN, para os pares locais atopados, de xeito predeterminado."
-
-#. Type: boolean
-#. Description
 #: ../btsync.templates:27001
 msgid "Should BitTorrent Sync use external relay servers wheen needed?"
 msgstr "BitTorrent Sync terá que usar servidores de repetición externos cando sexa necesario?"

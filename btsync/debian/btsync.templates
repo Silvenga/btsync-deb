@@ -171,9 +171,9 @@ Template: btsync/log-path
 Type: string
 Default: /tmp/sync.log
 _Description: Log file for the BitTorrent Sync Daemon:
- You can specify the log file for the BitTorrent Sync daemon. 
- WARNING: Make sure the parrent folder exists and that the 
- BitTorrent Sync daemon has permissions to read and write to said folder.  
+ You can specify the log file for the BitTorrent Sync daemon.
+ WARNING: Make sure the parrent folder exists and that the
+ BitTorrent Sync daemon has permissions to read and write to said folder.
 
 Template: btsync/external_port
 Type: string
@@ -219,13 +219,6 @@ Default: false
 _Description: Should BitTorrent Sync use DHT by default?
  If enabled, new shared folders will be configured to use the DHT (Distributed
  Hash Table) by default.
-
-Template: btsync/folder_defaults-use_lan_broadcast
-Type: boolean
-Default: true
-_Description: Should BitTorrent Sync use LAN broadcasts by default?
- If enabled, new shared folders will be configured to use LAN Broadcast for
- local peer discovery by default.
 
 Template: btsync/folder_defaults-use_relay
 Type: boolean

@@ -411,20 +411,6 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../btsync.templates:26001
-msgid "Should BitTorrent Sync use LAN broadcasts by default?"
-msgstr ""
-
-#. Type: boolean
-#. Description
-#: ../btsync.templates:26001
-msgid ""
-"If enabled, new shared folders will be configured to use LAN Broadcast for "
-"local peer discovery by default."
-msgstr ""
-
-#. Type: boolean
-#. Description
 #: ../btsync.templates:27001
 msgid "Should BitTorrent Sync use external relay servers wheen needed?"
 msgstr ""

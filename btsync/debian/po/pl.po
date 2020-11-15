@@ -321,18 +321,6 @@ msgstr "Jeśli ustawiono, nowo współdzielone foldery domyślne będą używać
 
 #. Type: boolean
 #. Description
-#: ../btsync.templates:26001
-msgid "Should BitTorrent Sync use LAN broadcasts by default?"
-msgstr "Czy BitTorrent Sync ma domyślnie używać rozgłaszania w LAN?"
-
-#. Type: boolean
-#. Description
-#: ../btsync.templates:26001
-msgid "If enabled, new shared folders will be configured to use LAN Broadcast for local peer discovery by default."
-msgstr "Jeśli ustawiono, nowo współdzielone foldery domyślnie będą używać rozgłaszania w LAN aby zlokalizować lokalnych peerów."
-
-#. Type: boolean
-#. Description
 #: ../btsync.templates:27001
 msgid "Should BitTorrent Sync use external relay servers wheen needed?"
 msgstr "Czy  BitTorrent Sync ma używać zewnętrznych serwerów przekazujących (relay servers) jeśli to potrzebne?"
