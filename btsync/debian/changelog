@@ -1,3 +1,9 @@
+btsync (2.6.0-1.0) unstable; urgency=medium
+
+  * Removed deprecated vender options (folder_defaults.use_lan_broadcast).
+
+ -- Mark Lopez (Authority) <m@silvenga.com>  Sun, 15 Nov 2020 11:17:51 -0600
+
 btsync (2.5.0-1.0) unstable; urgency=medium
 
   * Removed deprecated vender options.
@@ -7,34 +13,34 @@ btsync (2.5.0-1.0) unstable; urgency=medium
 
 btsync (2.4.0-1.0) unstable; urgency=medium
 
-  * Moves directory_root to root of config. 
+  * Moves directory_root to root of config.
 
  -- Mark Lopez (Authority) <m@silvenga.com>  Wed, 14 Sep 2016 21:14:07 -0600
 
 btsync (2.3.0-1.0) unstable; urgency=medium
 
-  * Customizable log path, RE #6. Thanks to @17Halbe. 
+  * Customizable log path, RE #6. Thanks to @17Halbe.
 
  -- Mark Lopez (Authority) <m@silvenga.com>  Fri, 29 Jan 2016 18:11:58 -0600
 
 btsync (2.2.2-1.0) unstable; urgency=medium
 
   * Non-maintainer upload.
-  * New upstream release. 
+  * New upstream release.
 
  -- Mark Lopez (Authority) <m@silvenga.com>  Thu, 24 Sep 2015 21:17:11 -0500
 
 btsync (2.2.1-1.3) unstable; urgency=medium
 
   * Non-maintainer upload.
-  * Remove use_dht as a deprecated configuration option. Thanks to @noiime and @RomanZ. 
+  * Remove use_dht as a deprecated configuration option. Thanks to @noiime and @RomanZ.
 
  -- Mark Lopez (Authority) <m@silvenga.com>  Thu, 17 Sep 2015 18:56:54 -0500
 
 btsync (2.2.1-1.2) unstable; urgency=medium
 
   * Non-maintainer upload.
-  * Fixes startup. 
+  * Fixes startup.
 
  -- Mark Lopez (Authority) <m@silvenga.com>  Thu, 17 Sep 2015 18:56:54 -0500
 
@@ -111,13 +117,13 @@ btsync (1.3.1-1) unstable; urgency=low
   * Updated spanish translation
   * Added support for post-installation triggers
   * Added support for bind-shim (Closes #94)
-  
+
  -- Leo Moll <leo.moll@yeasoft.com>  Tue, 08 Apr 2014 13:47:10 +0200
 
 btsync (1.3.0-1) unstable; urgency=low
 
   * Added support for the new 1.3 advanced settings (Closes #120)
- 
+
  -- Leo Moll <leo.moll@yeasoft.com>  Thu, 03 Apr 2014 14:14:58 +0200
 
 btsync (1.2.3-2) unstable; urgency=low
@@ -125,7 +131,7 @@ btsync (1.2.3-2) unstable; urgency=low
   * Localisation update
   * Fixed missing chinese localisation (filename was wrong)
   * Adjusted library dependencies
-  
+
  -- Leo Moll <leo.moll@yeasoft.com>  Tue, 18 Mar 2014 23:08:45 +0100
 
 btsync (1.2.3-1) unstable; urgency=low
@@ -430,14 +436,14 @@ btsync (1.0.134.2-1~sid) sid; urgency=low
     versions that support the current libc
 
  -- Leo Moll <leo.moll@yeasoft.com>  Sun, 02 June 2013 15:34:39 +0200
-    
+
 btsync (1.0.134.1-1~sid) sid; urgency=low
 
   * Fixed: Replaced binary version for i386 and amd64 with
     versions that support the current libc
 
  -- Leo Moll <leo.moll@yeasoft.com>  Sun, 02 June 2013 00:51:12 +0200
-    
+
 btsync (1.0.134-5~sid) sid; urgency=low
 
   * Fixed: btsync did not start if web gui was configured to
@@ -446,7 +452,7 @@ btsync (1.0.134-5~sid) sid; urgency=low
     if there is more than one btsync.*.pid file in /var/run
 
  -- Leo Moll <leo.moll@yeasoft.com>  Mon, 28 May 2013 17:08:21 +0200
-    
+
 btsync (1.0.134-4~sid) sid; urgency=low
 
   * Really Fixed: btsync-user does not work correctly due to
@@ -532,7 +538,7 @@ btsync (1.0.116-2) sid; urgency=low
       Bryan Larsen)
   * Improvements:
     * All debconf questions now have a decent default making it possible
-      to install non interactively using the "noninteractive" frontend 
+      to install non interactively using the "noninteractive" frontend
 
  -- Leo Moll <leo.moll@yeasoft.com>  Fri, 03 May 2013 13:01:25 +0100
 
